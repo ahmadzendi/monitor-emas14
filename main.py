@@ -510,7 +510,7 @@ th.profit,td.profit{width:154px;min-width:80px;max-width:160px;text-align:left}
 .card{border:1px solid #ccc;border-radius:6px;padding:10px}
 .card-usd{width:248px;height:370px;overflow-y:auto}
 .card-chart{flex:1;min-width:400px;height:370px;overflow:hidden}
-.card-calendar{width:100%;max-width:750px;height:450px;overflow:hidden;display:flex;flex-direction:column}
+.card-calendar{width:100%;max-width:750px;height:460px;overflow:hidden;display:flex;flex-direction:column}
 #priceList{list-style:none;padding:0;margin:0;max-height:275px;overflow-y:auto}
 #priceList li{margin-bottom:1px}
 .time{color:gray;font-size:.9em;margin-left:10px}
@@ -573,8 +573,10 @@ table.dataTable tbody td{padding:6px}
 .card-usd,.card-chart{width:100%!important;max-width:100%!important;min-width:0!important}
 .card-usd{height:auto;min-height:320px}
 .card-chart{height:380px}
-.card-calendar{max-width:100%;height:380px}
-.calendar-iframe{min-height:340px}
+.card-calendar{max-width:100%;height:380px;margin-left:0;margin-right:0}
+.calendar-section{padding:0;margin-left:0;margin-right:0}
+.calendar-section h3{padding-left:0}
+.calendar-iframe{min-height:340px;width:100%}
 .dt-top-controls{flex-direction:row;justify-content:space-between;gap:5px;margin-bottom:8px;padding:5px 0}
 .dataTables_wrapper .dataTables_length{font-size:12px!important}
 .dataTables_wrapper .dataTables_filter{font-size:12px!important}
@@ -613,8 +615,10 @@ th.waktu,td.waktu{width:60px;min-width:50px;max-width:70px}
 .card{padding:8px}
 .card-usd{min-height:280px}
 .card-chart{height:340px}
-.card-calendar{height:350px}
-.calendar-iframe{min-height:310px}
+.card-calendar{height:350px;margin:0;padding:0}
+.calendar-section{margin:20px 0 45px 0;padding:0}
+.calendar-section h3{margin:0 0 8px 0}
+.calendar-iframe{min-height:310px;width:100%}
 #footerApp{padding:5px 0}
 .marquee-text{font-size:12px}
 .dt-top-controls{gap:3px;margin-bottom:6px}
@@ -630,7 +634,6 @@ th.waktu,td.waktu{width:60px;min-width:50px;max-width:70px}
 #tabel tbody td.profit{width:110px!important;min-width:110px!important;max-width:110px!important}
 #tabel tbody td.transaksi .harga-beli,#tabel tbody td.transaksi .harga-jual,#tabel tbody td.transaksi .selisih{font-size:10px!important;margin-bottom:0!important}
 .profit-btn{padding:3px 5px;font-size:10px}
-.calendar-section{margin-bottom:45px}
 .chart-header h3{font-size:0.9em}
 .limit-label{font-size:0.8em}
 .limit-label .limit-num{font-size:1em;padding:1px 6px}
