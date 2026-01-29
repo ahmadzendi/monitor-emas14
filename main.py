@@ -510,7 +510,7 @@ th.profit,td.profit{width:154px;min-width:80px;max-width:160px;text-align:left}
 .card{border:1px solid #ccc;border-radius:6px;padding:10px}
 .card-usd{width:248px;height:370px;overflow-y:auto}
 .card-chart{flex:1;min-width:400px;height:370px;overflow:hidden}
-.card-calendar{width:100%;max-width:800px;height:450px;overflow:hidden;display:flex;flex-direction:column}
+.card-calendar{width:100%;max-width:750px;height:450px;overflow:hidden;display:flex;flex-direction:column}
 #priceList{list-style:none;padding:0;margin:0;max-height:275px;overflow-y:auto}
 #priceList li{margin-bottom:1px}
 .time{color:gray;font-size:.9em;margin-left:10px}
