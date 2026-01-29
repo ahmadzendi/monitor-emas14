@@ -547,7 +547,8 @@ th.profit,td.profit{width:154px;min-width:80px;max-width:160px;text-align:left}
 .tradingview-wrapper{height:100%;width:100%;overflow:hidden}
 .calendar-section{width:100%;margin-top:20px;margin-bottom:60px}
 .calendar-section h3{margin:0 0 10px}
-.calendar-iframe{border:0;width:100%;flex:1;min-height:280px;display:block}
+.calendar-wrap{width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}
+.calendar-iframe{border:0;width:100%;height:420px;min-width:700px;display:block}
 .chart-header{display:flex;justify-content:space-between;align-items:center;margin-top:0;margin-bottom:10px}
 .chart-header h3{margin:0}
 .limit-label{font-size:0.95em;font-weight:bold;color:#ff1744}
@@ -573,10 +574,10 @@ table.dataTable tbody td{padding:6px}
 .card-usd,.card-chart{width:100%!important;max-width:100%!important;min-width:0!important}
 .card-usd{height:auto;min-height:320px}
 .card-chart{height:380px}
-.card-calendar{max-width:100%;height:380px;margin-left:0;margin-right:0}
-.calendar-section{padding:0;margin-left:0;margin-right:0}
-.calendar-section h3{padding-left:0}
-.calendar-iframe{min-height:340px;width:100%}
+.card-calendar{max-width:100%;height:auto;padding:0}
+.calendar-section{margin-bottom:50px}
+.calendar-wrap{margin:0 -12px;padding:0 12px;width:calc(100% + 24px)}
+.calendar-iframe{height:380px;min-width:650px}
 .dt-top-controls{flex-direction:row;justify-content:space-between;gap:5px;margin-bottom:8px;padding:5px 0}
 .dataTables_wrapper .dataTables_length{font-size:12px!important}
 .dataTables_wrapper .dataTables_filter{font-size:12px!important}
@@ -591,7 +592,6 @@ table.dataTable tbody td{padding:6px}
 #tabel tbody td.transaksi .harga-beli,#tabel tbody td.transaksi .harga-jual,#tabel tbody td.transaksi .selisih{font-size:11px!important;margin-bottom:1px!important}
 .profit-order-btns{display:flex}
 .filter-wrap{flex-wrap:nowrap}
-.calendar-section{margin-bottom:50px}
 .chart-header{flex-direction:row;gap:8px}
 .chart-header h3{font-size:0.95em}
 .limit-label{font-size:0.85em}
@@ -615,10 +615,10 @@ th.waktu,td.waktu{width:60px;min-width:50px;max-width:70px}
 .card{padding:8px}
 .card-usd{min-height:280px}
 .card-chart{height:340px}
-.card-calendar{height:350px;margin:0;padding:0}
-.calendar-section{margin:20px 0 45px 0;padding:0}
-.calendar-section h3{margin:0 0 8px 0}
-.calendar-iframe{min-height:310px;width:100%}
+.card-calendar{height:auto;padding:0}
+.calendar-section{margin:20px 0 45px 0}
+.calendar-wrap{margin:0 -10px;padding:0 10px;width:calc(100% + 20px)}
+.calendar-iframe{height:350px;min-width:600px}
 #footerApp{padding:5px 0}
 .marquee-text{font-size:12px}
 .dt-top-controls{gap:3px;margin-bottom:6px}
@@ -643,7 +643,7 @@ th.waktu,td.waktu{width:60px;min-width:50px;max-width:70px}
 <body>
 <div class="header">
 <div class="title-wrap">
-<h2>MONITORING Harga Emas Treasury  ➺ </h2>
+<h2>Harga Emas Treasury  ➺ </h2>
 <a href="https://t.me/+FLtJjyjVV8xlM2E1" target="_blank" class="tele-link" title="Join Telegram"><span class="tele-icon"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg></span><span class="tele-text">Telegram</span></a>
 </div>
 <button class="theme-toggle-btn" id="themeBtn" onclick="toggleTheme()" title="Ganti Tema">🌙</button>
@@ -686,7 +686,9 @@ th.waktu,td.waktu{width:60px;min-width:50px;max-width:70px}
 <div class="calendar-section">
 <h3>Kalender Ekonomi</h3>
 <div class="card card-calendar">
+<div class="calendar-wrap">
 <iframe class="calendar-iframe" src="https://sslecal2.investing.com?columns=exc_flags,exc_currency,exc_importance,exc_actual,exc_forecast,exc_previous&category=_employment,_economicActivity,_inflation,_centralBanks,_confidenceIndex&importance=3&features=datepicker,timezone,timeselector,filters&countries=5,37,48,35,17,36,26,12,72&calType=week&timeZone=27&lang=54" loading="lazy"></iframe>
+</div>
 </div>
 </div>
 <footer id="footerApp"><span class="marquee-text">&copy;2026 ~ahmadkholil~</span></footer>
