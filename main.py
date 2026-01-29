@@ -510,7 +510,7 @@ th.profit,td.profit{width:154px;min-width:80px;max-width:160px;text-align:left}
 .card{border:1px solid #ccc;border-radius:6px;padding:10px}
 .card-usd{width:248px;height:370px;overflow-y:auto}
 .card-chart{flex:1;min-width:400px;height:370px;overflow:hidden}
-.card-calendar{width:100%;height:470px;overflow:hidden}
+.card-calendar{width:100%;max-width:800px;height:450px;overflow:hidden;display:flex;flex-direction:column}
 #priceList{list-style:none;padding:0;margin:0;max-height:275px;overflow-y:auto}
 #priceList li{margin-bottom:1px}
 .time{color:gray;font-size:.9em;margin-left:10px}
@@ -545,15 +545,17 @@ th.profit,td.profit{width:154px;min-width:80px;max-width:160px;text-align:left}
 .dark-mode .profit-btn.active{background:#ffb300;color:#222;border-color:#ffb300}
 .filter-wrap{display:flex;align-items:center}
 .tradingview-wrapper{height:100%;width:100%;overflow:hidden}
-.calendar-section{margin-top:20px;margin-bottom:60px}
+.calendar-section{width:100%;margin-top:20px;margin-bottom:60px}
 .calendar-section h3{margin:0 0 10px}
-.calendar-iframe{border:0;width:100%;height:100%;display:block}
+.calendar-iframe{border:0;width:100%;flex:1;min-height:280px;display:block}
 .chart-header{display:flex;justify-content:space-between;align-items:center;margin-top:0;margin-bottom:10px}
 .chart-header h3{margin:0}
 .limit-label{font-size:0.95em;font-weight:bold;color:#ff1744}
 .limit-label .limit-num{font-size:1.1em;padding:2px 8px;background:#ff1744;color:#fff;border-radius:4px;margin-left:4px}
 .dark-mode .limit-label{color:#00E124}
 .dark-mode .limit-label .limit-num{background:#00E124;color:#181a1b}
+.dark-mode .card{border-color:#444}
+.dark-mode .card-calendar{background:#23272b}
 @media(max-width:768px){
 body{padding:12px;padding-bottom:50px}
 h2{font-size:1.1em}
@@ -571,7 +573,8 @@ table.dataTable tbody td{padding:6px}
 .card-usd,.card-chart{width:100%!important;max-width:100%!important;min-width:0!important}
 .card-usd{height:auto;min-height:320px}
 .card-chart{height:380px}
-.card-calendar{height:450px}
+.card-calendar{max-width:100%;height:380px}
+.calendar-iframe{min-height:340px}
 .dt-top-controls{flex-direction:row;justify-content:space-between;gap:5px;margin-bottom:8px;padding:5px 0}
 .dataTables_wrapper .dataTables_length{font-size:12px!important}
 .dataTables_wrapper .dataTables_filter{font-size:12px!important}
@@ -610,7 +613,8 @@ th.waktu,td.waktu{width:60px;min-width:50px;max-width:70px}
 .card{padding:8px}
 .card-usd{min-height:280px}
 .card-chart{height:340px}
-.card-calendar{height:400px}
+.card-calendar{height:350px}
+.calendar-iframe{min-height:310px}
 #footerApp{padding:5px 0}
 .marquee-text{font-size:12px}
 .dt-top-controls{gap:3px;margin-bottom:6px}
